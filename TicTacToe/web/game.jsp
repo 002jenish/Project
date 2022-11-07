@@ -15,10 +15,19 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <!--<style>
+            <!--h1{text-align: center;}
+        </style>-->
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Tic Tac Toe</title>
     </head>
+    
     <body>
+        <font  size =" 5"
+               face=" verdana"
+               color="blue"
+               Tic Tac Toe
+               </font>
         <h1>Tic Tac Toe</h1>
         <table border="1">
             <c:forEach var="line" items="${gameBean.gridLines}">
@@ -48,9 +57,9 @@
             </c:forEach>
         </table>
         <c:if test="${winner != null}">
-            <h2>${winner} gagne !</h1>
+            <h2>${winner} win !</h2>
             <form action="index.jsp" method="post">
-                <input type="submit" name="Replay" value="Rejouer..."><br/>
+                <input type="submit" name="Replay" value="Replay"><br/>
             </form>
         </c:if>
     </body>
